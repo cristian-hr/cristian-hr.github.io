@@ -28,7 +28,7 @@ function Projects () {
             name: "ChronoApp",
             image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/chronoapp.jpg?alt=media&token=bfb35c42-73bb-4c54-b5ec-d8322bbf10dc",
             desc:"ChronoApp is a stopwatch app that allows you to records a time and also show all the times saved in the database. The project has unitary tests in the front-end and in the back-end. Also it has full Docker implementation.",
-            link: "",
+            link: " ",
             github: "https://github.com/cristian-hr/ChronoAPP"
         },
         {
