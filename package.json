@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://cristian-hr.github.io",
+  "homepage": "https://cristian-hr.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^7.4.4",
