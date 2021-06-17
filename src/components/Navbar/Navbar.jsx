@@ -7,11 +7,11 @@ function Navbar() {
         <div className="navBar">
             <Link className="linksClass" to="/">Home</Link>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/projects">Projects</Link>
+            <Link className="linksClass" to="/">Projects</Link>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/about">About</Link>
+            <Link className="linksClass" to="/">About</Link>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/contact">Contact</Link>
+            <Link className="linksClass" to="/">Contact</Link>
         </div>
     )
 }

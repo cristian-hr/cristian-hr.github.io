@@ -9,10 +9,10 @@ function routes () {
     return (
     <BrowserRouter>
         <Route path="/" component={Navbar} />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/" component={Home} />
+        <Route path="/" component={Projects} />
+        <Route path="/" component={About} />
+        <Route path="/" component={Contact} />
     </BrowserRouter>
     )
 }
