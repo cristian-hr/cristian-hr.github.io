@@ -44,7 +44,7 @@ function Skills() {
                 <div className="contIconsSkills">
                     <SiAdobephotoshop className="iconSkills" />
                     <SiAdobelightroomcc className="iconSkills" />
-                    <img className="imgSkills" src="https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/davinci.svg?alt=media&token=a70bb568-4c48-42b4-8d5c-20747531d01f" alt="" />
+                    <img className="davinciSkills" src="https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/davinci.svg?alt=media&token=a70bb568-4c48-42b4-8d5c-20747531d01f" alt="" />
                 </div>
             </div>
         </div>
