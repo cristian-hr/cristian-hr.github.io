@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom"
 import "../../scss/Navbar.scss"
 
-function Navbar() {
+function Navbar(props) {
 
     return (
         <div className="navBar">
-            <Link className="linksClass" to="/">Home</Link>
+            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.homeRef)}>Home</span>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/">Projects</Link>
+            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.projectsRef)}>Projects</span>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/">About</Link>
+            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.aboutRef)}>About</span>
             <span className="barNB">|</span>
-            <Link className="linksClass" to="/">Contact</Link>
+            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.contactRef)}>Contact</span>
         </div>
     )
 }

@@ -1,8 +1,10 @@
 import server from './app';
 const functions = require("firebase-functions");
 
-// server.listen(process.env.PORT || 3001, () => {
-//   console.log(`API listening at ${process.env.PORT || 3001}`); // eslint-disable-line no-console
-// });
+const PORT = 3001
 
-exports.server = functions.https.onRequest(server)
+server.listen(PORT, () => {
+  console.log(`API listening at ${PORT}`); // eslint-disable-line no-console
+});
+
+exports.portfolio_back = functions.https.onRequest(server)

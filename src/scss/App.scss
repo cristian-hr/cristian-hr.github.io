@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background: rgb(20, 20, 20);

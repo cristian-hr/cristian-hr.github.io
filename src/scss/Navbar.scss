@@ -7,8 +7,10 @@
     padding: 10px;  
 }
 
-.linksClass {
+.buttonNavBar {
     color:white; 
+    cursor: pointer;
+    background: none;
     margin: 0 10px;
     text-decoration: none;
     &:hover {
