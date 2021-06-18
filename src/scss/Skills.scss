@@ -10,7 +10,8 @@
     }
 
     .iconSkills {
-        margin: 10px 10px;
+        margin: 15px;
+        margin-bottom: 0;
     }
 
     .contIconsSkills {
@@ -19,11 +20,13 @@
         flex-wrap: wrap;
     }
     .imgSkills {
-        margin: 10px;
+        margin: 15px;
+        margin-bottom: 0;
     }
     .davinciSkills {
-        margin: 3px;
-        height: 85px;
+        margin: 15px;
+        margin-bottom: 0;
+        height: 70px;
         width: 85px;
         object-fit: contain;
     }
@@ -31,5 +34,12 @@
         height: 70px;
         width: 70px;
         object-fit: contain;
+    }
+    .divIconsSkills {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        font-size: 19px;
     }
 }
