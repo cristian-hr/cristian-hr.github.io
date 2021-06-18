@@ -8,7 +8,7 @@ function Navbar(props) {
             <span className="barNB">|</span>
             <span className="buttonNavBar" onClick={()=>props.executeScroll(props.projectsRef)}>Projects</span>
             <span className="barNB">|</span>
-            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.aboutRef)}>About</span>
+            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.skillsRef)}>Skills</span>
             <span className="barNB">|</span>
             <span className="buttonNavBar" onClick={()=>props.executeScroll(props.contactRef)}>Contact</span>
         </div>

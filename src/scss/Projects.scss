@@ -1,6 +1,6 @@
 .projects {
     color: white;
-
+    padding-top: 50px;
     .titleProjects {
         font-size: 50px;
         font-weight: 600;
@@ -23,14 +23,27 @@
     .cardsProject {
         display: flex;
         flex-direction: column;
+        justify-content:space-between;
         max-width: 400px;
         margin: 15px;
+        background-color: rgb(31, 31, 31);
+        box-shadow: 5px 5px 10px 1px rgb(0, 0, 0); 
+    }
+    .divNameProject {
         background-color: black;
+        padding: 3px;
     }
     .nameProject {
         font-size: 20px;
-        font-weight: 700;
-        background-color: black;
+        font-weight: 700;        
+    }
+    .divDescProject {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .linksProjects {
+        padding: 20px;
     }
     .descProject {
         text-align: start;
@@ -40,6 +53,9 @@
         color: white;
         text-decoration: none;
         margin: 10px;
+        background: black;
+        border-radius: 15px;
+        padding: 5px 15px;
         &:hover {
             font-weight: 600;
             text-decoration: underline;

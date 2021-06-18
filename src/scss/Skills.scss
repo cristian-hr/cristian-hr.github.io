@@ -1,0 +1,29 @@
+.skills {
+    color: white;
+    font-size: 70px;
+    .titleSkills {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .subTitleSkills {
+        font-size: 40px;
+    }
+
+    .iconSkills {
+        margin: 10px 10px;
+    }
+
+    .contIconsSkills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .imgSkills {
+        margin: 10px;
+    }
+    img {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+    }
+}
