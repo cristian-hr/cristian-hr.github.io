@@ -52,11 +52,3 @@ function Skills() {
 }
 
 export default Skills
-
-// Sequelize
-// Express.js
-// firebase
-// git
-
-//github
-//linkedin
