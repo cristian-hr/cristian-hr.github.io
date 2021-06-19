@@ -75,7 +75,7 @@ function Skills() {
             </div>
             <div>
                 <div className="divSubTitleSkills">
-                    <span className="subTitleSkills">Graphics</span>
+                    <span className="subTitleSkills">Photo/Video</span>
                 </div>
                 <div className="contIconsSkills">
                     <div className="divIconsSkills">
