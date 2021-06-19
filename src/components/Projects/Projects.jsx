@@ -53,7 +53,7 @@ function Projects() {
             <div className="contProjects">
                 {projects.map((project, index) => {
                     return (
-                        <div className="cardsProject">
+                        <div key={index} className="cardsProject">
                             <div>
                                 <div className="divNameProject">
                                     <span className="nameProject">{project.name}</span>
