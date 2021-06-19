@@ -19,7 +19,7 @@ function Skills() {
         <div className="skills">
             <span className="titleSkills">Skills</span>
             <div>
-                <div>
+                <div className="divSubTitleSkills">
                     <span className="subTitleSkills">Full Stack</span>
                 </div>
                 <div className="contIconsSkills">
@@ -74,7 +74,7 @@ function Skills() {
                 </div>
             </div>
             <div>
-                <div>
+                <div className="divSubTitleSkills">
                     <span className="subTitleSkills">Graphics</span>
                 </div>
                 <div className="contIconsSkills">

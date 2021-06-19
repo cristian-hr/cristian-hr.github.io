@@ -1,17 +1,21 @@
 .skills {
     color: white;
-    font-size: 70px;
+    padding-top: 50px;
     .titleSkills {
         font-size: 50px;
         font-weight: 600;
     }
+    .divSubTitleSkills {
+        padding: 30px;
+        padding-top: 40px;
+    }
     .subTitleSkills {
         font-size: 40px;
     }
-
     .iconSkills {
         margin: 15px;
         margin-bottom: 0;
+        font-size: 70px;
     }
 
     .contIconsSkills {
@@ -27,7 +31,7 @@
         margin: 15px;
         margin-bottom: 0;
         height: 70px;
-        width: 85px;
+        width: 90px;
         object-fit: contain;
     }
     img {
