@@ -4,13 +4,13 @@ function Navbar(props) {
 
     return (
         <div className="navBar">
-            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.homeRef)}>Home</span>
+            <button className="buttonNavBar" onClick={()=>props.executeScroll(props.homeRef)}>Home</button>
             <span className="barNB">|</span>
-            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.projectsRef)}>Projects</span>
+            <button className="buttonNavBar" onClick={()=>props.executeScroll(props.projectsRef)}>Projects</button>
             <span className="barNB">|</span>
-            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.skillsRef)}>Skills</span>
+            <button className="buttonNavBar" onClick={()=>props.executeScroll(props.skillsRef)}>Skills</button>
             <span className="barNB">|</span>
-            <span className="buttonNavBar" onClick={()=>props.executeScroll(props.contactRef)}>Contact</span>
+            <button className="buttonNavBar" onClick={()=>props.executeScroll(props.contactRef)}>Contact</button>
         </div>
     )
 }
