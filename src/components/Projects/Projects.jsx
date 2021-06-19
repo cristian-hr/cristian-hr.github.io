@@ -9,13 +9,20 @@ function Projects() {
             desc: "Henry Games is a videgames gallery that uses the rawg api. Also have an option to create a videgame that is saved in a database.",
             link: "https://henry-games.vercel.app",
             github: "https://github.com/cristian-hr/VideogamesAPP"
-        },
+        },        
         {
             name: "Digital Art",
             image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/digitalart.jpg?alt=media&token=0da462ba-f37b-48c6-8fe9-3c37092a1dc3",
             desc: "Digital Art is an e-commerse built from scratch using React, Redux, Express and Sequelize. It has authentication with Firebase and Google, two factor authentication with Authy, emails services with Sendgrid and payments methods with Paypal and Stripe.",
             link: "https://digitalart-front.vercel.app",
             github: "https://github.com/cristian-hr/Digital-Art-Ecommerce"
+        },
+        {
+            name: "Portfolio",
+            image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/portfolio.jpg?alt=media&token=12245ce4-96c9-4a87-8117-0213e5db988e",
+            desc: "This Portfolio is the current website that you are seeing. It's made with React in the frontend and Express.js in the backend with full ES6 support. The frontend was deployed in Github Pages and the backend in Firebase. Also uses Sendgrind for the email service.",
+            link: "https://cristian-hr.github.io/",
+            github: "https://github.com/cristian-hr/cristian-hr.github.io"
         },
         {
             name: "PostApp",
@@ -48,9 +55,13 @@ function Projects() {
                     return (
                         <div className="cardsProject">
                             <div>
-                                <div className="divNameProject"><span className="nameProject">{project.name}</span></div>
+                                <div className="divNameProject">
+                                    <span className="nameProject">{project.name}</span>
+                                </div>
                                 <img src={project.image} alt="" />
-                                <span className="descProject">{project.desc}</span>
+                                <div className="divDescProjects">
+                                    <span className="descProject">{project.desc}</span>
+                                </div>
                             </div>
                             <div className="linksProjects">
                                 <a href={project.link}>Link</a>
