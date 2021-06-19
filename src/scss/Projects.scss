@@ -42,7 +42,7 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    .linksProjects {
+    .linksProjects {      
         padding: 20px;
     }
     .descProject {
@@ -53,9 +53,9 @@
         color: white;
         text-decoration: none;
         margin: 10px;
-        background: black;
-        border-radius: 15px;
-        padding: 5px 15px;
+        background: rgb(10, 10, 10);
+        border-radius: 3px;
+        padding: 3px 15px;
         &:hover {
             font-weight: 600;
             text-decoration: underline;
