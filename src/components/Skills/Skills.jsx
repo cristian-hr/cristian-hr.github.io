@@ -88,7 +88,7 @@ function Skills() {
                     </div>
                     <div className="divIconsSkills">
                         <img className="davinciSkills" src="https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/davinci.svg?alt=media&token=040b7ea9-f33f-495d-a7ca-5b6a4b4c615e" alt="" />
-                        <span>D. Resolve</span>
+                        <span>DaVinci R.</span>
                     </div>
                 </div>
             </div>
