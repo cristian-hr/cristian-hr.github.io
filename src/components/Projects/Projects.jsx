@@ -13,7 +13,7 @@ function Projects() {
         {
             name: "Digital Art",
             image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/digitalart.jpg?alt=media&token=0da462ba-f37b-48c6-8fe9-3c37092a1dc3",
-            desc: "Digital Art is an e-commerse built from scratch using React, Redux, Express and Sequelize. It has authentication with Firebase and Google, two factor authentication with Authy, emails services with Sendgrid and payments methods with Paypal and Stripe.",
+            desc: "Digital Art is an e-commerse built from scratch using React, Redux, Node.js, Express and Sequelize. It has authentication with Firebase and Google, two factor authentication with Authy, emails services with Sendgrid and payments methods with Paypal and Stripe.",
             link: "https://digitalart-front.vercel.app",
             github: "https://github.com/cristian-hr/Digital-Art-Ecommerce"
         },
@@ -23,6 +23,13 @@ function Projects() {
             desc: "This Portfolio is the current website that you are seeing. It's made with React in the frontend and Express.js in the backend with full ES6 support. The frontend was deployed in Github Pages and the backend in Firebase. Also uses Sendgrind for the email service.",
             link: "https://cristian-hr.github.io/",
             github: "https://github.com/cristian-hr/cristian-hr.github.io"
+        },
+        {
+            name: "Tic Tac Toe Online",
+            image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/tictactoe.jpg?alt=media&token=bbab85a0-0760-4610-bcde-43ed29a1dad5",
+            desc: "This is the classic Tic Tac Toe game but you can play online with other person.",
+            link: "https://tic-tac-toe-gato.vercel.app/",
+            github: "https://github.com/cristian-hr/Tic-Tac-Toe"
         },
         {
             name: "PostApp",
@@ -37,14 +44,7 @@ function Projects() {
             desc: "ChronoApp is a stopwatch app that allows you to records a time and also show all the times saved in the database. The project has unitary tests in the front-end and in the back-end. Also it has full Docker implementation.",
             link: " ",
             github: "https://github.com/cristian-hr/ChronoAPP"
-        },
-        {
-            name: "ParkingLots App",
-            image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/parkinglotsapp.jpg?alt=media&token=521ab115-e601-42c9-9768-ea9923062229",
-            desc: "ParkingLots App is a searching app that looks for parking lots in the city that the user look for",
-            link: "https://parking-lots-app.vercel.app/",
-            github: "https://github.com/cristian-hr/ParkingLotsAPP"
-        },
+        },        
     ]
 
     return (
