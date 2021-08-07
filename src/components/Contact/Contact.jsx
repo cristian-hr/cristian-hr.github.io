@@ -23,7 +23,7 @@ function Contact() {
     function handleSubmit(event) {
         event.preventDefault()
         if (!validateEmail(form.email)) {
-            setvalidEmail(true)
+            setvalidEmail(true);
         }
         else {
             Swal.fire({
