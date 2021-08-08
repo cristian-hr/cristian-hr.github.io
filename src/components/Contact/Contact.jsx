@@ -6,7 +6,6 @@ import "../../scss/Contact.scss";
 function Contact() {
   const initialForm = { name: "", email: "", message: "" };
   const [form, setForm] = useState(initialForm);
-
   const [validEmail, setvalidEmail] = useState(false);
 
   function validateEmail(email) {
