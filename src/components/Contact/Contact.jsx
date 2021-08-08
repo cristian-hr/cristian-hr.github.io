@@ -11,18 +11,18 @@ function Contact() {
 
   function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+    return re.test(String(email).toLowerCase())
   }
 
   function handleInputChange(event) {
     if (event.target.name === "email") setvalidEmail(false);
-    setForm({ ...form, [event.target.name]: event.target.value });
+    setForm({ ...form, [event.target.name]: event.target.value })
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit (event) { 
+    event.preventDefault()
     if (!validateEmail(form.email)) {
-      setvalidEmail(true);
+      setvalidEmail(true)
     } else {
       Swal.fire({
         title: "Submited!",
