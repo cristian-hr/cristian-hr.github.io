@@ -1,5 +1,5 @@
 name: reviewdog
-on: [push]
+on: [pull_request]
 jobs:
   eslint:
     name: runner / eslint
@@ -9,6 +9,6 @@ jobs:
       - uses: reviewdog/action-eslint@v1
         with:
           github_token: ${{ github.token }}
-          reporter: github-check # Change reporter.
+          reporter: github-pr-review # Change reporter.
           level: error
           eslint_flags: 'src/'
