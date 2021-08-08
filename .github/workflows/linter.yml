@@ -1,55 +1,76 @@
 ---
-###########################
-###########################
-## Linter GitHub Actions ##
-###########################
-###########################
-name: Lint Code Base
-
-#
-# Documentation:
-# https://help.github.com/en/articles/workflow-syntax-for-github-actions
-#
 
 #############################
-# Start the job on all push #
 #############################
-on:
-  push:
-    branches-ignore: [main]
-    # Remove the line above to run when pushing to master
-  pull_request:
-    branches: [main]
+## JavaScript Linter rules ##
+#############################
+#############################
+
+############
+# Env Vars #
+############
+env:
+  browser: true
+  es6: true
+  jest: true
 
 ###############
-# Set the Job #
+# Global Vars #
 ###############
-jobs:
-  build:
-    # Name the Job
-    name: Lint Code Base
-    # Set the agent to run on
-    runs-on: ubuntu-latest
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
 
-    ##################
-    # Load all steps #
-    ##################
-    steps:
-      ##########################
-      # Checkout the code base #
-      ##########################
-      - name: Checkout Code
-        uses: actions/checkout@v2
-        with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
-          fetch-depth: 0
+###############
+# Parser vars #
+###############
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
 
-      ################################
-      # Run Linter against code base #
-      ################################
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+###########
+# Plugins #
+###########
+plugins:
+  - '@typescript-eslint'
+
+#########
+# Rules #
+#########
+rules: {
+  semi: ["error", "always"],
+  quotes: ["error", "double"]
+}
+
+##############################
+# Overrides for JSON parsing #
+##############################
+overrides:
+
+# JSON files
+- files:
+  - "*.json"
+  extends:
+  - plugin:jsonc/recommended-with-json
+  parser: jsonc-eslint-parser
+  parserOptions:
+    jsonSyntax: JSON
+
+# JSONC files
+- files:
+  - "*.jsonc"
+  extends:
+  - plugin:jsonc/recommended-with-jsonc
+  parser: jsonc-eslint-parser
+  parserOptions:
+    jsonSyntax: JSONC
+
+# JSON5 files
+- files:
+  - "*.json5"
+  extends:
+  - plugin:jsonc/recommended-with-json5
+  parser: jsonc-eslint-parser
+  parserOptions:
+    jsonSyntax: JSON5
