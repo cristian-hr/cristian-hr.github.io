@@ -39,4 +39,5 @@ jobs:
         env:       
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BRANCH: main
+          JAVASCRIPT_ES_CONFIG_FILE: /.eslintrc.json
           VALIDATE_JSX: true
