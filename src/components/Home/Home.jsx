@@ -2,6 +2,8 @@ import React from "react";
 import "../../scss/Home.scss";
 
 function Home() {
+  const a = 1;
+  if (!a) return { error: "error" };
   return (
     <div className="home">
       <div className="divImgHome">

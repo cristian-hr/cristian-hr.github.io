@@ -20,5 +20,13 @@
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["error", "double"]
-    }
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"],
+            "extensions": [".js", ".jsx"]
+          }
+        }
+      }
 }

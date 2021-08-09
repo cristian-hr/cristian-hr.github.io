@@ -4,6 +4,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import "../../scss/Footer.scss";
 
 function Footer() {
+  const a = 1;
+  if (!a) return { error: "error" };
   return (
     <div className="footer">
       <a href="https://github.com/cristian-hr"><AiFillGithub className="iconsFooter" /></a>
