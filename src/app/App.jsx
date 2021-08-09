@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import "../scss/App.scss";
 import Skills from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
