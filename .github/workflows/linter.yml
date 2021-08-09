@@ -1,20 +1,36 @@
-name: Lint
+---
+#################################
+#################################
+## Super Linter GitHub Actions ##
+#################################
+#################################
+name: Lint Code Base
 
+#
+# Documentation:
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
+#
+
+#############################
+# Start the job on all push #
+#############################
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+    branches: [master, main]
 
+###############
+# Set the Job #
+###############
 jobs:
-  run-linters:
-    name: Run linters
+  build:
+    # Name the Job
+    name: Lint Code Base
+    # Set the agent to run on
     runs-on: ubuntu-latest
 
+    ##################
+    # Load all steps #
+    ##################
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
@@ -24,11 +40,14 @@ jobs:
         with:
           node-version: 12
 
-      # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v1
-        with:
-          eslint: true
+      - name: Super-Linter
+        uses: github/super-linter@v4
+        env:       
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main
+          LINTER_RULES_PATH: /
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          VALIDATE_JSX: true
