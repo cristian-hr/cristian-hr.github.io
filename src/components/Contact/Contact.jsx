@@ -16,7 +16,7 @@ function Contact() {
 
   function handleInputChange(event) {
     if (event.target.name === "email") setvalidEmail(false);
-    setForm({ ...form, [event.target.name]: event.target.value });
+    setForm({ ...form, [event.target.name]: event.target.value })
   }
 
   function handleSubmit(event) {
