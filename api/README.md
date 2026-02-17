@@ -38,7 +38,8 @@ gcloud run deploy portfolio-api \
   --source ./api \
   --region us-central1 \
   --allow-unauthenticated \
-  --set-env-vars "RESEND_API_KEY=re_xx=cristian.xx@gmail.com,MAIL_FROM=cristian@portfolio-api-xx.us-central1.run.app" \
+  --max-instances=1 \
+  --set-env-vars "RESEND_API_KEY=re_xx,MAIL_TO=cristian.xx@gmail.com,MAIL_FROM=onboarding@resend.dev" \
   --project=devportfolio-xx
 ```
 
@@ -51,8 +52,11 @@ gcloud run deploy portfolio-api \
   --image gcr.io/TU_PROJECT_ID/portfolio-api \
   --region us-central1 \
   --allow-unauthenticated \
+  --max-instances=1 \
   --set-env-vars "RESEND_API_KEY=re_xxx,MAIL_TO=...,MAIL_FROM=..."
 ```
+
+**Nota:** `--max-instances=1` limita el servicio a una sola instancia. Así el rate limit en memoria es efectivo. Si quieres escalar, quita ese flag o usa un valor mayor.
 
 ### Tras el deploy
 
