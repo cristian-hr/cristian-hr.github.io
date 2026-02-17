@@ -20,5 +20,11 @@
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["error", "double"]
-    }
+    },
+    "overrides": [
+        {
+            "files": ["api/**/*.js"],
+            "rules": { "import/no-extraneous-dependencies": "off" }
+        }
+    ]
 }

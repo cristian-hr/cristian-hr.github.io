@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-api",
+  "version": "1.0.0",
+  "description": "Portfolio contact API - Cloud Run",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.22.1",
+    "morgan": "^1.10.1",
+    "resend": "^6.9.2",
+    "winston": "^3.19.0"
+  }
+}

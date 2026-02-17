@@ -9,7 +9,7 @@ function Home() {
       </div>
       <div className="descHome">
         <span className="helloHome">Hello,</span>
-        <span className="nameHome">&apos; Cristian Hernández</span>
+        <span className="nameHome">I&apos;m Cristian Hernández</span>
         <span className="fullstackHome">Full Stack Web Developer</span>
       </div>
     </div>

@@ -6,7 +6,7 @@ import {
   SiRedux,
   SiPostgresql,
   SiDocker,
-  SiAdobelightroomcc,
+  SiAdobelightroom,
   SiAdobephotoshop,
   SiFirebase,
 } from "react-icons/si";
@@ -82,7 +82,7 @@ function Skills() {
             <span>Photoshop</span>
           </div>
           <div className="divIconsSkills">
-            <SiAdobelightroomcc className="iconSkills" />
+            <SiAdobelightroom className="iconSkills" />
             <span>Lightroom</span>
           </div>
           <div className="divIconsSkills">
