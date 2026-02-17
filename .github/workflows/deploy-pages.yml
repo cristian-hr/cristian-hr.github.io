@@ -30,10 +30,15 @@ jobs:
           node-version: "24"
           cache: "npm"
 
+      - name: Require backend URL
+        run: |
+          if [ -z "${{ vars.REACT_APP_BACK_URL }}" ] && [ -z "${{ secrets.REACT_APP_BACK_URL }}" ]; then
+            echo "::error::Add REACT_APP_BACK_URL in Settings → Secrets and variables → Actions (Variable or Secret)"
+            exit 1
+          fi
       - name: Install and build
         env:
-          # Configurar en el repo: Settings → Secrets and variables → Actions → Variables → REACT_APP_BACK_URL
-          REACT_APP_BACK_URL: ${{ vars.REACT_APP_BACK_URL }}
+          REACT_APP_BACK_URL: ${{ vars.REACT_APP_BACK_URL || secrets.REACT_APP_BACK_URL }}
         run: |
           npm ci
           npm run build
