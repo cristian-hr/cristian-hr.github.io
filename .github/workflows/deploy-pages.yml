@@ -20,6 +20,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages  # así el job ve el secret REACT_APP_BACK_URL del environment
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,13 +33,13 @@ jobs:
 
       - name: Require backend URL
         run: |
-          if [ -z "${{ vars.REACT_APP_BACK_URL }}" ] && [ -z "${{ secrets.REACT_APP_BACK_URL }}" ]; then
-            echo "::error::Add REACT_APP_BACK_URL in Settings → Secrets and variables → Actions (Variable or Secret)"
+          if [ -z "${{ secrets.REACT_APP_BACK_URL }}" ]; then
+            echo "::error::Add REACT_APP_BACK_URL in Environments → github-pages → Environment secrets"
             exit 1
           fi
       - name: Install and build
         env:
-          REACT_APP_BACK_URL: ${{ vars.REACT_APP_BACK_URL || secrets.REACT_APP_BACK_URL }}
+          REACT_APP_BACK_URL: ${{ secrets.REACT_APP_BACK_URL }}
         run: |
           npm ci
           npm run build
