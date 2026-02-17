@@ -31,6 +31,9 @@ jobs:
           cache: "npm"
 
       - name: Install and build
+        env:
+          # Configurar en el repo: Settings → Secrets and variables → Actions → Variables → REACT_APP_BACK_URL
+          REACT_APP_BACK_URL: ${{ vars.REACT_APP_BACK_URL }}
         run: |
           npm ci
           npm run build
