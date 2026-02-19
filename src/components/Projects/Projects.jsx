@@ -14,7 +14,7 @@ function Projects() {
       name: "Digital Art",
       image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/digitalart.jpg?alt=media&token=0da462ba-f37b-48c6-8fe9-3c37092a1dc3",
       desc: "Digital Art is an e-commerce built from scratch using React, Redux, Node.js, Express and Sequelize. It has authentication with Firebase and Google, two-factor authentication with Authy, emails services with Sendgrid and payments methods with Paypal and Stripe.",
-      link: "https://digitalart-front.vercel.app",
+      link: "https://digital-art-ecommerce.vercel.app",
       github: "https://github.com/cristian-hr/Digital-Art-Ecommerce",
     },
     {
