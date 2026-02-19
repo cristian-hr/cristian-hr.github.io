@@ -34,8 +34,8 @@ function Projects() {
     {
       name: "PostApp",
       image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/postapp.jpg?alt=media&token=8d9ab899-7eae-41a0-a1ce-4c53c913b966",
-      desc: "PostApp is a simple app that allows you to make a post, search for posts and see all the posts.",
-      link: "https://post-app-front.vercel.app",
+      desc: "PostApp is a simple app that allows you to make a post, search for posts and see all the posts. The frontend was made with React and the backend with Go using the Gin framework and Gorm ORM.",
+      link: "https://post-app-orpin.vercel.app/",
       github: "https://github.com/cristian-hr/PostAPP",
     },
   ];
