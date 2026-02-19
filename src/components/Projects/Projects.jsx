@@ -7,7 +7,7 @@ function Projects() {
       name: "Henry games",
       image: "https://firebasestorage.googleapis.com/v0/b/devportfolio-8fb10.appspot.com/o/henrygames.jpg?alt=media&token=3ce9e560-597a-4d67-91bb-0e284f6347e4",
       desc: "Henry Games is a videogames gallery that uses the Rawg API. It also has an option to create a custom game that is saved in a Database.",
-      link: "https://videogames-app-roan.vercel.app/",
+      link: "https://videogames-app-roan.vercel.app",
       github: "https://github.com/cristian-hr/VideogamesAPP",
     },
     {
